@@ -1,0 +1,21 @@
+.cell{
+    background-color: black;
+    min-width: 20px;
+    min-height: 20px;
+    margin: 3px;
+}
+
+.selected{
+    background-color: red !important;
+}
+
+.value-0{
+    background-image: linear-gradient(to bottom right, #332b18, #717171b8);
+}
+
+.value-1{;
+    background-image: linear-gradient(to bottom right, #ffedc6, #f5f5f5b8);}
+
+#main-container{
+    padding-top: 5rem;
+}
