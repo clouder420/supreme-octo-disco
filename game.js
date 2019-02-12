@@ -96,8 +96,11 @@ get_bounds = function(){
         var ys = get_selected().map(e => e.y);
     }
 
-    var m = new Point(xs.sort()[0], ys.sort()[0]);
-    var M = new Point(xs.sort().pop(), ys.sort().pop());
+    function sortNumber(a,b) {
+        return a - b;
+    }
+    var m = new Point(xs.sort(sortNumber)[0], ys.sort(sortNumber)[0]);
+    var M = new Point(xs.sort(sortNumber).pop(), ys.sort(sortNumber).pop());
 
     return [m, M]
 }
